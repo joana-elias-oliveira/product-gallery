@@ -1,0 +1,166 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+}
+
+/* Estilos do cabeçalho */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ff9a9a; 
+    font-size: 40px;
+}
+
+/* Estilos da galeria de produtos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffe8e8; /* Fundo branco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h2 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.product p {
+    color: #777;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilos da barra de pesquisa */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffe8e8;
+    font-size: 18px;
+    font-weight: bold; /* Texto mais visível */
+    color: #333; /* Cor de texto mais escura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#searchInput::placeholder {
+    color: #777;}
+
+#searchInput:focus {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao focar */
+    
+}
+
+/* Estilos do seletor de quantidade de produtos */
+#itemCountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+#itemCountLabel {
+    font-size: 17px;
+    color: #333;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#itemCountSelect {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe8e8;
+    font-size: 18px;
+    font-weight: bold; /* Texto mais visível */
+    color: #333; /* Cor de texto mais escura */
+    box-shadow: 0 4px 6px rgba(241, 159, 159, 0.1);
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fce7e7;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(250, 163, 163, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #ff6b6b;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff4040; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    color: #4d0a0a;
+}
+
+.modal p {
+    color: #9b6a6a;
+}
+
+.modal img {
+    max-width: 100%;
+    height: auto;
+}

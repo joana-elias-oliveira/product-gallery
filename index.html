@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br><br><h1>Galeria de Produtos</h1> <br><br>
+
+    <!-- Contêiner para barra de pesquisa e número de produtos -->
+    <div class="search-container">
+        <label for="searchInput">Pesquisar produtos:</label>
+        <input type="text" id="searchInput" placeholder="Digite sua pesquisa">
+        <label for="itemCountSelect" id="itemCountLabel">Número de produtos:</label>
+        <select id="itemCountSelect">
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+        </select>
+    </div>
+
+    <!-- Contêiner para os produtos -->
+    <div class="container" id="container"></div>
+
+    <!-- Detalhes do produto (inicialmente ocultos) -->
+    <div id="details">
+        <h2 id="detailsTitle"></h2>
+        <p id="detailsValue"></p>
+        <p id="detailsDescription"></p>
+        <img id="detailsImage" src="" alt="">
+    </div>
+  
+    <!-- Modal para detalhes do produto -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalValue"></p>
+        </div>
+    </div>
+
+    <!-- Inclua seu script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
